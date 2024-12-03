@@ -3,22 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#7728FF"
+    android:background="@color/teal_700"
+    android:gravity="center"
     android:padding="16dp">
 
+    <!-- تصویر اختیاری -->
     <ImageView
-        android:id="@+id/header_image"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:src="@drawable/ic_person"
-        android:contentDescription="Profile Image" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="App Icon"
+        android:layout_marginBottom="8dp" />
 
+    <!-- متن هدر -->
     <TextView
-        android:id="@+id/header_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:text="Username"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:text="All in One"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center" />
+
 </LinearLayout>
+

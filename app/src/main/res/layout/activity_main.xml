@@ -17,23 +17,17 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light_pink"
+            style="@style/Widget.FirstStart.TopAppBar"
             app:title="Online Shop"
             app:menu="@menu/top_app_bar_menu"
             app:navigationIcon="@drawable/ic_menu" />
 
-
-
-        <!-- FrameLayout برای محتوای اصلی -->
+        <!-- محتوای Fragment -->
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
-
     </LinearLayout>
-
-
 
     <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
@@ -44,7 +38,7 @@
         app:menu="@menu/navigation_menu"
         app:headerLayout="@layout/nav_header" />
 
-    <!-- Floating Action Button -->
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
